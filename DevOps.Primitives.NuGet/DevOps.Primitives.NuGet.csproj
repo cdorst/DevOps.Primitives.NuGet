@@ -1,7 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Authors>cdorst</Authors>
+    <Description>Contains NuGetReference type for modeling NuGet PackageReference or DotNetCliToolReference items</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>CDorst.DevOps.Primitives.NuGet</PackageId>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
 </Project>
