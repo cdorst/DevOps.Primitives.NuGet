@@ -1,4 +1,5 @@
-﻿using DevOps.Primitives.Strings;
+﻿using Common.EntityFrameworkServices;
+using DevOps.Primitives.Strings;
 using ProtoBuf;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -6,7 +7,7 @@ namespace DevOps.Primitives.NuGet
 {
     [ProtoContract]
     [Table("NuGetReferences", Schema = "CodeDeclarations")]
-    public class NuGetReference
+    public class NuGetReference : IUniqueListRecord
     {
         public NuGetReference() { }
         public NuGetReference(string include, string version)
