@@ -24,11 +24,11 @@ namespace DevOps.Primitives.NuGet
 
         public List<NuGetReferenceListAssociation> GetAssociations() => NuGetReferenceListAssociations;
 
-        public void SetRecords(List<NuGetReference> records)
+        public void SetRecords(in List<NuGetReference> records)
         {
-            NuGetReferenceListAssociations = UniqueListAssociationsFactory<NuGetReference, NuGetReferenceListAssociation>.Create(records);
+            NuGetReferenceListAssociations = UniqueListAssociationsFactory<NuGetReference, NuGetReferenceListAssociation>.Create(in records);
             ListIdentifier = new AsciiStringReference(
-                UniqueListIdentifierFactory<NuGetReference>.Create(records, r => r.NuGetReferenceId));
+                UniqueListIdentifierFactory<NuGetReference>.Create(in records, r => r.NuGetReferenceId));
         }
     }
 }

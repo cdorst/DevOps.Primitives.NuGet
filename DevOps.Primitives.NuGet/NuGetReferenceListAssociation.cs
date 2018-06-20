@@ -23,10 +23,10 @@ namespace DevOps.Primitives.NuGet
 
         public NuGetReference GetRecord() => NuGetReference;
 
-        public void SetRecord(NuGetReference record)
+        public void SetRecord(in NuGetReference record)
         {
             NuGetReference = record;
-            NuGetReferenceId = NuGetReference.NuGetReferenceId;
+            NuGetReferenceId = record.NuGetReferenceId;
         }
     }
 }

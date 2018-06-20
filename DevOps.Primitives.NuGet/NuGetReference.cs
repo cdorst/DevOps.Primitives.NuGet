@@ -10,10 +10,10 @@ namespace DevOps.Primitives.NuGet
     public class NuGetReference : IUniqueListRecord
     {
         public NuGetReference() { }
-        public NuGetReference(string include, string version)
+        public NuGetReference(in string include, in string version)
         {
-            Include = new AsciiStringReference(include);
-            Version = new AsciiStringReference(version);
+            Include = new AsciiStringReference(in include);
+            Version = new AsciiStringReference(in version);
         }
 
         [ProtoMember(1)]

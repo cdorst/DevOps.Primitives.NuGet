@@ -5,12 +5,13 @@
     <Description>Contains NuGetReference type for modeling NuGet PackageReference or DotNetCliToolReference items</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>CDorst.DevOps.Primitives.NuGet</PackageId>
+    <LangVersion>latest</LangVersion>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>3.1.3</Version>
+    <Version>4.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CDorst.DevOps.Primitives.Strings" Version="2.0.2" />
+    <PackageReference Include="CDorst.DevOps.Primitives.Strings" Version="3.0.1" />
   </ItemGroup>
 
 </Project>
